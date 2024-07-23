@@ -1,0 +1,1383 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+      
+    </head>
+    <style>        :root {
+      --red: #ef233c;
+      --darkred: #c00424;
+      --platinum: #e5e5e5;
+      --black: #2b2d42;
+      --white: #fff;
+      --thumb: #edf2f4;
+    }
+    
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    /* overflow: hidden; */
+    
+    }
+   ::-webkit-scrollbar {
+  display: none;
+}
+    body {
+      font: 16px / 24px "Rubik", sans-serif;
+      color: var(--black);
+      background: black;
+      /* margin: 50px 0; */
+      /* padding: 45px; */
+    }
+    
+    p{
+      font-size: 14px;
+    }
+    span p{
+        color: #02040400;
+        opacity: 0;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 1em;
+    }
+    
+    .cards {
+     
+      display: flex;
+      padding: 25px 0px;
+      list-style: none;
+      overflow-x: scroll !important;
+      scroll-snap-type: x mandatory !important;
+    }
+    
+    .card {
+        min-width: 19.4vw;
+        height: 60vh;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 100%;
+      padding: 20px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+      scroll-snap-align: start;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+    
+    .card:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+    .card:hover {
+      color: var(--white);
+      background: var(--red);
+    }
+    
+    .card .card-title {
+      font-size: 20px;
+    }
+    
+    .card .card-content {
+      margin: 20px 0;
+      max-width: 85%;
+      max-height: 10vh;
+    }
+    
+    .card .card-link-wrapper {
+      margin-top: auto;
+    }
+    
+    .card .card-link {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: var(--red);
+      /* padding: 6px 12px; */
+      border-radius: 8px;
+      /* transition: background 0.2s; */
+    }
+    
+    .card:hover .card-link {
+      background: var(--darkred);
+    }
+    
+    .cards::-webkit-scrollbar {
+      height: 12px;
+      display: inline;
+    }
+    
+    .cards::-webkit-scrollbar-thumb,
+    .cards::-webkit-scrollbar-track {
+      border-radius: 92px;
+    }
+    
+    .cards::-webkit-scrollbar-thumb {
+      background: var(--darkred);
+    }
+    
+    .cards::-webkit-scrollbar-track {
+      background: var(--thumb);
+    }
+    
+    @media (min-width: 500px) {
+      .card {
+        flex-basis: calc(50% - 10px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    
+    @media (min-width: 700px) {
+      .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    
+    @media (min-width: 1100px) {
+      .card {
+        flex-basis: calc(25% - 30px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+    
+    .nav-pills{
+    margin-top: 50%;
+    background-color: #000000;
+    }
+    .pil{
+        /* padding: 30px !important; */
+    background-color: #000000 !important;
+    color: #edf2f4 !important;
+    font-size: 24px !important;
+    }
+    .active{
+      /* padding: 30px !important; */
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    .pil:active,:focus{
+        padding: 30px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    /* .active1{
+      padding: 30px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    .active1:blank{
+      padding: 30px !important;
+    background-color: #ff1212 !important;
+    color: #000000 !important;
+    font-weight: bold;
+    } */
+    
+    .inside-img{
+       height: 20vh;
+        /* width: 16.5vw; */ 
+        border-radius: 10px;
+        align-items: center;
+    }
+    
+    .a{
+      text-decoration: none;
+      background-color: transparent;
+    }
+    h1{
+      color: #e5e5e5;
+    }
+    .container{
+      background-color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+/* display: table-cell; */
+width:30px;
+height: 16px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#000000;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:39px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+/* -webkit-transform:translateZ(0) scale(1,1); */
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+/* -webkit-transform:translateZ(0) scale(1,1); */
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+/* .area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+} */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #020404;
+  color: #eee;
+  height: 100vh;
+  font-family: "Poppins";
+  padding-inline: clamp(1.5rem, 2vw, 2rem);
+  overflow: hidden;
+} */
+/*# Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  font-size: 12px;
+  padding-top: 10px;
+}
+header .logo {
+  font-weight: bold;
+}
+header .menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+header .menu-items a {
+  color: #eee;
+  text-decoration: none;
+}
+header .menu-items .special {
+  background-color: #eee;
+  color: #020404;
+  padding: 3px 5px;
+  border-radius: 0.3rem;
+}
+header .lang {
+  display: flex;
+}
+/*# Hero Section */
+/*? BG GIF */
+.bg-gif video {
+  /* position: relative; */
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 85%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*? Hero ctr */
+.ctr {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+.left-ctr-1 h1 {
+  margin: 10px 0px;
+  line-height: 1.5rem;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.left-ctr-2 {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+}
+.left-ctr-2 .left-ctr-2-1 {
+  width: 40%;
+}
+.left-ctr-2 .left-ctr-2-2 {
+  margin: 0px 20px;
+}
+.left-ctr-2 .left-ctr-2-2 p {
+  margin-bottom: 4px;
+  text-decoration: underline;
+}
+.left-ctr-2 p {
+  font-size: 10px;
+  line-height: 170%;
+  color: #a0a0a0;
+}
+.ctr .right-ctr {
+  margin-right: 2rem;
+  background-color: #eeeeee0c;
+  color: #020404;
+  width: 500px;
+  height: fit-content;
+  font-size: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.right-ctr-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: fit-content;
+}
+.right-ctr-box .right-ctr-box-inner-1,
+.right-ctr-box .right-ctr-box-inner-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.right-ctr-box h1 {
+  font-size: 35px;
+}
+.right-ctr-box p {
+  font-size: 10px;
+}
+span {
+  overflow: hidden;
+  display: block;
+}
+
+    </style>
+    <script>
+        const tl = gsap.timeline();
+tl.from([".logo, .menu-items a, .lang"], {
+  duration: 1,
+  opacity: 0,
+  y: 40,
+  stagger: { amount: 0.4 }
+})
+  .from(
+    ".left-ctr h1",
+    { opacity: 0, duration: 1, y: 100, skewY: 10, stagger: { amount: 0.4 } },
+    "-=1"
+  )
+  .from(
+    [".left-ctr-2-1, .left-ctr-2-2"],
+    { opacity: 0, duration: 1, y: 100, stagger: { amount: 0.4 } },
+    "-=1"
+  )
+  .from(".right-ctr", { duration: 1, x: 500, skewX: 50 }, "-=1");
+
+    </script>
+    <body>
+     
+      
+        <div class="top">
+
+
+            <!--! ------------------------------- Header -------------------------------- -->
+<header>
+   
+  
+  
+    <!-- <div class="lang"> -->
+      <!-- <div class="lang-en">En</div>
+    </div> -->
+  </header>
+  <!--  -->
+  <!--! ---------------------------- Hero Section ----------------------------- -->
+  <!--# BG GIF -->
+  <div class="bg-gif"><video autoplay loop src="https://cdn.dribbble.com/users/2733/screenshots/15581498/media/55cb2ac35a15f1ffe8e2f1e9d979feed.mp4" alt="bg"></div>
+  
+  <!--# Hero ctr -->
+  <div class="ctr">
+    <!--! left-ctr -->
+    <div class="left-ctr">
+      <div class="left-ctr-1 p-3">
+        <span>
+          <h1 class="px-1">Gain,Improve</h1>
+        </span>
+        <span>
+          <h1> Knowldege</h1>
+        </span>
+        <span>
+          <h1>From Our</h1>
+        </span>
+        <span>
+          <h1>Site</h1>
+        </span>
+        <!-- <span>
+          <h1>Nft's</h1>
+        </span> -->
+      </div>
+      <div class="left-ctr-2">
+  
+        <div class="left-ctr-2-2">
+          <span>
+            <p></p>
+          </span>
+          <span>
+            <p></p>
+          </span>
+          <span>
+           <p>deg</p>
+            <p>gh</p>
+            <p>deg</p>
+            <p>gh</p><p>deg</p>
+            <p>gh</p>
+            <p>dnh</p>
+            <p>hd</p>
+            <p>h</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="right-ctr">
+      <div class="right-ctr-box">
+        <div class="right-ctr-box-inner-1">
+          <h1>Programming Courses</h1>
+        
+        </div>
+        <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+             <span></span>
+          </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+
+
+
+            <nav class="main-menu">
+                    <ul>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-0">
+                                <i class="fa bi bi-house-door-fill fa-2x"></i><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                              Home
+                                </span>
+                            </a>
+                          
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-1">
+                                <i class="fa fa-2x bi bi-book"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                            Courses
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-2">
+                                <i class="fa fa-2x bi bi-airplane-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                                    Higher Studies
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-3">
+                                <i class=" fa fa-2x bi bi-briefcase-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                  <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                                    Placement
+                                </span>
+                            </a>
+                           
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-4">
+                                <i class="fa fa-2x bi bi-person-badge"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                                  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                                   Faculty
+                                </span>
+                            </a>
+                        </li> 
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-5">
+                                <i class="fa fa-2x bi bi-calendar2-event-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-calendar2-event-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                               Events
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                           <a href="#">
+                               <i class="fa fa-2x"></i>
+                                <span class="nav-text">
+                                    Tools & Resources
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class="nav-text">
+                                    Member Map
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <i class="fa fa-info fa-2x"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <ul class="logout">
+                        <li>
+                           <a href="#">
+                                 <i class="fa fa-power-off fa-2x"></i>
+                                <span class="nav-text">
+                                    Logout
+                                </span>
+                            </a>
+                        </li>  
+                    </ul> -->
+                </nav>
+         
+                <div class="row">
+<div class="col-12 row">
+    <div class="col-md-1"></div>
+      <h1 class="mx-5 mt-3">Recommended Courses</h1>
+  <div class="row col-12 m-2">
+    <div class="col-md-3 col-12">
+      <!-- Tab navs -->
+      <div
+        class="nav flex-column nav-pills text-center"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <a
+          class="nav-link active  pil"
+          id="v-pills-home-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-home"
+          role="tab"
+          aria-controls="v-pills-home"
+          aria-selected="true"
+          >C </a
+        >
+        <a
+          class="nav-link pil"
+          id="v-pills-profile-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-profile"
+          role="tab"
+          aria-controls="v-pills-profile"
+          aria-selected="false"
+          >Python</a>
+        <a
+          class="nav-link pil"
+          id="v-pills-messages-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-messages"
+          role="tab"
+          aria-controls="v-pills-messages"
+          aria-selected="false"
+          >Java</a
+        >
+      </div>
+      <!-- Tab navs -->
+    </div>
+  
+    <div class="col-md-9 col-12 mt-5">
+      <!-- Tab content -->
+      <div class="tab-content" id="v-pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-home"
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab"
+        >
+        <div class="container">
+           
+            <ul class="cards">
+              <li class="card">
+                <div>
+            
+                  <img class="inside-img col-12" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png">
+                 
+                       <h3 class="card-title pt-3">Geeksforgeeks<br>C 
+                        </h3>
+                  <div class="card-content">
+                    <p>GeeksforGeeks is a popular online platform that provides tutorials ..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.geeksforgeeks.org/c-programming-language/">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                 
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="https://yt3.googleusercontent.com/ytc/APkrFKbuYOGp-TK6Ui5mHPkbcnNNZlhrMUVOa0C7sdPX=s900-c-k-c0x00ffffff-no-rj">
+                 
+                    <h3 class="card-title pt-3">Neso Academy <br>C                  
+                     </h3>
+                  <div class="card-content">
+                    <p>NesoAcademy offers world-class learning resources on engineering ...</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR">
+                    <div class="btn btn-danger col-8"> Watch More</div></a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="data:image/png;base64,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">
+                 
+                    <h3 class="card-title pt-3">Tutorialspoint<br>C
+                        
+                     </h3>
+                  <div class="card-content">
+                    <p>Tutorials Point is a leading Ed Tech company striving to provide..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.tutorialspoint.com/cprogramming/index.htm">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                  <img class="inside-img col-12" src="https://yt3.googleusercontent.com/o4MZVi2qdNgx0K7vpEl7DT2PefjROdisZTD7is6TMimF1_DTM49O1ld3iQzTpE5MCj86c-vzav8=s900-c-k-c0x00ffffff-no-rj">
+
+                  <h3 class="card-title pt-3">
+                    Telusko<br> C  </h3>
+                  <div class="card-content">
+                    <p>It started with the aim not just to teach but to educate in Navin's... </p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7oBxHp43xQTFrw9f1CDPR6C"> 
+                    <div class="btn btn-danger col-8"> Watch More</div>
+                  </a>
+                </div>
+              </li>
+
+
+              <li class="card">
+                <div>
+            
+                  <img class="inside-img col-12" src="https://cdn.programiz.com/sites/tutorial2program/files/pc_logo.svg">
+                 
+                       <h3 class="card-title pt-3">Programiz <br> C
+                        </h3>
+                  <div class="card-content">
+                    <p>Programiz is an online platform that provides tutorials and resources ..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.programiz.com/c-programming">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                 
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="data:image/png;base64,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">
+                 
+                    <h3 class="card-title pt-3">Thenewboston<br>C                
+                     </h3>
+                  <div class="card-content">
+                    <p>Tons of sweet computer tutorials and some awesome videos too!...</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq">
+                    <div class="btn btn-danger col-8"> Watch More</div></a>
+                </div>
+              </li>
+              <!-- <li class="card">
+                <div>
+                    <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+                 
+                    <h3 class="card-title pt-3">****FreeCodeCamp
+                        
+                     </h3>
+                  <div class="card-content">
+                    <p>FreeCodeCamp offers curriculum for web development..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.freecodecamp.org/learn/responsive-web-design/">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                  <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+
+                  <h3 class="card-title pt-3">
+                    ****Developedbyed</h3>
+                  <div class="card-content">
+                    <p>Whether you're a beginner or an experienced developer</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="https://www.youtube.com/watch?v=vQWlgd7hV4A&list=PLDyQo7g0_nsU2O7gEdh7cAgamyh0xZumZ&index=1"> 
+                    <div class="btn btn-danger col-8"> Watch More</div>
+                  </a>
+                </div>
+              </li>
+
+
+              <li class="card">
+                <div>
+                  <h3 class="card-title">Service 9</h3>
+                  <div class="card-content">
+                    <p>Duis id congue turpis. Donec sodales porta felis, nec ultricies ante. Nam placerat vitae metus sit amet tempor. Aliquam ac dictum est.</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="" class="card-link">Learn More</a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                  <h3 class="card-title">Service 10</h3>
+                  <div class="card-content">
+                    <p>Pellentesque eget eros eget justo efficitur fermentum.</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="" class="card-link">Learn More</a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                  <h3 class="card-title">Service 11</h3>
+                  <div class="card-content">
+                    <p>Phasellus posuere nec nibh ut tincidunt. Aenean mollis turpis non eros posuere, at luctus leo hendrerit. Integer non libero sapien.</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="" class="card-link">Learn More</a>
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                  <h3 class="card-title">Service 12</h3>
+                  <div class="card-content">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ornare metus ac lectus scelerisque volutpat.</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="" class="card-link">Learn More</a>
+                </div>
+              </li> -->
+
+
+            </ul>
+          </div>
+       
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-profile"
+          role="tabpanel"
+          aria-labelledby="v-pills-profile-tab"
+        >
+        <div class="container">
+           
+          <ul class="cards">
+            <li class="card">
+              <div>
+          
+                <img class="inside-img col-12" src="https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj">
+               
+                     <h3 class="card-title pt-3">W3-Schools<br>Python
+                      </h3>
+                <div class="card-content">
+                  <p>Python is a popular programming language can be used on a server ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.w3schools.com/python/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://i.ytimg.com/vi/kqtD5dpn9C8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDUfDm4pZy31SgukBjtAcDkHh4wsA">
+                  <h3 class="card-title pt-3">Programming  Mosh <br>Python                  
+                   </h3>
+                <div class="card-content">
+                  <p>Python tutorial - Python full course for beginners - Go from Zero to Hero ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=_uQrJ0TkZlc">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://kinsta.com/wp-content/uploads/2021/07/learnpython.png">
+               
+                  <h3 class="card-title pt-3"> Learn Python<br>Python
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>The official home of the Python Programming Language....</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.learnpython.org/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://cdn.thenewstack.io/media/2023/08/dfada6c0-techworld-with-nana_featured.png">
+
+                <h3 class="card-title pt-3">
+                 
+                     TechWorld with Nana  <br>Python </h3>
+                <div class="card-content">
+                  <p>TechWorld with Nana Python Tutorial for Beginners ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=t8pPdKYpowI"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://cdn.programiz.com/sites/tutorial2program/files/pc_logo.svg">
+          
+               
+                     <h3 class="card-title pt-3">Programiz <br> Python
+                      </h3>
+                <div class="card-content">
+                  <p>Learn to code programs with our easy to follow tutorials...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.programiz.com/python-programming">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://www.henleyherald.com/wp-content/uploads/2019/08/66734754_10156176643630988_883564894085971968_o.jpg">
+
+               
+                  <h3 class="card-title pt-3">Freecodecamp <br>Python            
+                   </h3>
+                <div class="card-content">
+                  <p>We're a small team of developers and designers spread out all across  ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=eWRfhZUzrAc">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+            <!-- <li class="card">
+              <div>
+                  <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+               
+                  <h3 class="card-title pt-3">****FreeCodeCamp
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>FreeCodeCamp offers curriculum for web development..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.freecodecamp.org/learn/responsive-web-design/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+
+                <h3 class="card-title pt-3">
+                  ****Developedbyed</h3>
+                <div class="card-content">
+                  <p>Whether you're a beginner or an experienced developer</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=vQWlgd7hV4A&list=PLDyQo7g0_nsU2O7gEdh7cAgamyh0xZumZ&index=1"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 9</h3>
+                <div class="card-content">
+                  <p>Duis id congue turpis. Donec sodales porta felis, nec ultricies ante. Nam placerat vitae metus sit amet tempor. Aliquam ac dictum est.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 10</h3>
+                <div class="card-content">
+                  <p>Pellentesque eget eros eget justo efficitur fermentum.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 11</h3>
+                <div class="card-content">
+                  <p>Phasellus posuere nec nibh ut tincidunt. Aenean mollis turpis non eros posuere, at luctus leo hendrerit. Integer non libero sapien.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 12</h3>
+                <div class="card-content">
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ornare metus ac lectus scelerisque volutpat.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li> -->
+
+
+          </ul>
+          </div>
+        </div>
+
+
+        <div
+          class="tab-pane fade"
+          id="v-pills-messages"
+          role="tabpanel"
+          aria-labelledby="v-pills-messages-tab"
+        >
+        <div class="container">
+           
+          <ul class="cards">
+            <li class="card">
+              <div>
+          
+                <img class="inside-img col-12" src="https://yt3.googleusercontent.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj">
+               
+                     <h3 class="card-title pt-3">W3-Schools<br>Java
+                      </h3>
+                <div class="card-content">
+                  <p>Java is a popular programming language can be used for mobile ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.w3schools.com/java/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://yt3.googleusercontent.com/o4MZVi2qdNgx0K7vpEl7DT2PefjROdisZTD7is6TMimF1_DTM49O1ld3iQzTpE5MCj86c-vzav8=s900-c-k-c0x00ffffff-no-rj">
+
+                  <h3 class="card-title pt-3">Telusko<br>Java             
+                   </h3>
+                <div class="card-content">
+                  <p>It started with the aim not just to teach but to educate in Navin's...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=BGTx91t8q50">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://media.licdn.com/dms/image/C4D0BAQEwg5FK93uumQ/company-logo_200_200/0/1631325754943?e=2147483647&v=beta&t=3Er4Zys0FL9sMVXL__MRJX5xAsq0bbFg7NCj60DbKYI">
+               
+                  <h3 class="card-title pt-3"> Javatpoint<br>Java
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>The official home of the Python Programming Language....</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.javatpoint.com/java-tutorial">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://yt3.googleusercontent.com/7q9t5rjeujEZYqY1xMLn0mvT4Zc6MaZBYgtseDL2_Zh42AOhMze8ep7BUKdR5FnxytMy3csj=s176-c-k-c0x00ffffff-no-rj">
+
+                <h3 class="card-title pt-3">
+                 
+                  Simplilearn <br>Java </h3>
+                <div class="card-content">
+                  <p>Simplilearn is the world's #1 online Bootcamp & one of the world's leading ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=t8pPdKYpowI"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="data:image/png;base64,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">
+          
+               
+                     <h3 class="card-title pt-3">Tutorialspoint <br> Java
+                      </h3>
+                <div class="card-content">
+                  <p>Tutorials Point is a leading Ed Tech company striving to provide the ....</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.tutorialspoint.com/java/index.htm">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1701075563/img/site/edureka_1362740598.png">
+               
+                  <h3 class="card-title pt-3"> Edureka <br>Java           
+                   </h3>
+                <div class="card-content">
+                  <p>Edureka is an online training provider with the most effective learning ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=hBh_CC5y8-s&t=32638s">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+            <!-- <li class="card">
+              <div>
+                  <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+               
+                  <h3 class="card-title pt-3">****FreeCodeCamp
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>FreeCodeCamp offers curriculum for web development..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.freecodecamp.org/learn/responsive-web-design/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2019/01/AI-artificial-intelligence-brain-deep-learning.jpg?fit=7016%2C4961&ssl=1">
+
+                <h3 class="card-title pt-3">
+                  ****Developedbyed</h3>
+                <div class="card-content">
+                  <p>Whether you're a beginner or an experienced developer</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=vQWlgd7hV4A&list=PLDyQo7g0_nsU2O7gEdh7cAgamyh0xZumZ&index=1"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 9</h3>
+                <div class="card-content">
+                  <p>Duis id congue turpis. Donec sodales porta felis, nec ultricies ante. Nam placerat vitae metus sit amet tempor. Aliquam ac dictum est.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 10</h3>
+                <div class="card-content">
+                  <p>Pellentesque eget eros eget justo efficitur fermentum.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 11</h3>
+                <div class="card-content">
+                  <p>Phasellus posuere nec nibh ut tincidunt. Aenean mollis turpis non eros posuere, at luctus leo hendrerit. Integer non libero sapien.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <h3 class="card-title">Service 12</h3>
+                <div class="card-content">
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ornare metus ac lectus scelerisque volutpat.</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="" class="card-link">Learn More</a>
+              </div>
+            </li> -->
+
+
+          </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tab content -->
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+  </html>

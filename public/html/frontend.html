@@ -1,0 +1,1163 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+      
+    </head>
+    <style>        :root {
+      --red: #ef233c;
+      --darkred: #c00424;
+      --platinum: #e5e5e5;
+      --black: #2b2d42;
+      --white: #fff;
+      --thumb: #edf2f4;
+    }
+    
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    /* overflow: hidden; */
+    
+    }
+   ::-webkit-scrollbar {
+  display: none;
+}
+    body {
+      font: 16px / 24px "Rubik", sans-serif;
+      color: var(--black);
+      background: black;
+      /* margin: 50px 0; */
+      /* padding: 45px; */
+    }
+    
+    p{
+      font-size: 14px;
+    }
+    span p{
+        color: #02040400;
+        opacity: 0;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 1em;
+    }
+    
+    .cards {
+     
+      display: flex;
+      padding: 25px 0px;
+      list-style: none;
+      overflow-x: scroll !important;
+      scroll-snap-type: x mandatory !important;
+    }
+    
+    .card {
+        min-width: 19.4vw;
+        height: 60vh;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 100%;
+      padding: 20px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+      scroll-snap-align: start;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+    
+    .card:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+    .card:hover {
+      color: var(--white);
+      background: var(--red);
+    }
+    
+    .card .card-title {
+      font-size: 20px;
+    }
+    
+    .card .card-content {
+      margin: 20px 0;
+      max-width: 85%;
+      max-height: 10vh;
+    }
+    
+    .card .card-link-wrapper {
+      margin-top: auto;
+    }
+    
+    .card .card-link {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: var(--red);
+      /* padding: 6px 12px; */
+      border-radius: 8px;
+      /* transition: background 0.2s; */
+    }
+    
+    .card:hover .card-link {
+      background: var(--darkred);
+    }
+    
+    .cards::-webkit-scrollbar {
+      height: 12px;
+      display: inline;
+    }
+    
+    .cards::-webkit-scrollbar-thumb,
+    .cards::-webkit-scrollbar-track {
+      border-radius: 92px;
+    }
+    
+    .cards::-webkit-scrollbar-thumb {
+      background: var(--darkred);
+    }
+    
+    .cards::-webkit-scrollbar-track {
+      background: var(--thumb);
+    }
+    
+    @media (min-width: 500px) {
+      .card {
+        flex-basis: calc(50% - 10px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    
+    @media (min-width: 700px) {
+      .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    
+    @media (min-width: 1100px) {
+      .card {
+        flex-basis: calc(25% - 30px);
+      }
+    
+      .card:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+    
+    .nav-pills{
+    margin-top: 50%;
+    background-color: #000000;
+    }
+    .pil{
+        /* padding: 30px !important; */
+    background-color: #000000 !important;
+    color: #edf2f4 !important;
+    font-size: 24px !important;
+    }
+    .active{
+      /* padding: 30px !important; */
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    .pil:active,:focus{
+        padding: 30px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    /* .active1{
+      padding: 30px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: bold;
+    }
+    .active1:blank{
+      padding: 30px !important;
+    background-color: #ff1212 !important;
+    color: #000000 !important;
+    font-weight: bold;
+    } */
+    
+    .inside-img{
+       height: 20vh;
+        /* width: 16.5vw; */ 
+        border-radius: 10px;
+        align-items: center;
+    }
+    
+    .a{
+      text-decoration: none;
+      background-color: transparent;
+    }
+    h1{
+      color: #e5e5e5;
+    }
+    .container{
+      background-color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+/* display: table-cell; */
+width:30px;
+height: 16px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#000000;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:39px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+/* -webkit-transform:translateZ(0) scale(1,1); */
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+/* -webkit-transform:translateZ(0) scale(1,1); */
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+/* .area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+} */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #020404;
+  color: #eee;
+  height: 100vh;
+  font-family: "Poppins";
+  padding-inline: clamp(1.5rem, 2vw, 2rem);
+  overflow: hidden;
+} */
+/*# Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  font-size: 12px;
+  padding-top: 10px;
+}
+header .logo {
+  font-weight: bold;
+}
+header .menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+header .menu-items a {
+  color: #eee;
+  text-decoration: none;
+}
+header .menu-items .special {
+  background-color: #eee;
+  color: #020404;
+  padding: 3px 5px;
+  border-radius: 0.3rem;
+}
+header .lang {
+  display: flex;
+}
+/*# Hero Section */
+/*? BG GIF */
+.bg-gif video {
+  /* position: relative; */
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 85%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*? Hero ctr */
+.ctr {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+.left-ctr-1 h1 {
+  margin: 10px 0px;
+  line-height: 1.5rem;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.left-ctr-2 {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+}
+.left-ctr-2 .left-ctr-2-1 {
+  width: 40%;
+}
+.left-ctr-2 .left-ctr-2-2 {
+  margin: 0px 20px;
+}
+.left-ctr-2 .left-ctr-2-2 p {
+  margin-bottom: 4px;
+  text-decoration: underline;
+}
+.left-ctr-2 p {
+  font-size: 10px;
+  line-height: 170%;
+  color: #a0a0a0;
+}
+.ctr .right-ctr {
+  margin-right: 2rem;
+  background-color: #eeeeee0c;
+  color: #020404;
+  width: 500px;
+  height: fit-content;
+  font-size: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.right-ctr-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: fit-content;
+}
+.right-ctr-box .right-ctr-box-inner-1,
+.right-ctr-box .right-ctr-box-inner-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.right-ctr-box h1 {
+  font-size: 35px;
+}
+.right-ctr-box p {
+  font-size: 10px;
+}
+span {
+  overflow: hidden;
+  display: block;
+}
+
+    </style>
+    <script>
+        const tl = gsap.timeline();
+tl.from([".logo, .menu-items a, .lang"], {
+  duration: 1,
+  opacity: 0,
+  y: 40,
+  stagger: { amount: 0.4 }
+})
+  .from(
+    ".left-ctr h1",
+    { opacity: 0, duration: 1, y: 100, skewY: 10, stagger: { amount: 0.4 } },
+    "-=1"
+  )
+  .from(
+    [".left-ctr-2-1, .left-ctr-2-2"],
+    { opacity: 0, duration: 1, y: 100, stagger: { amount: 0.4 } },
+    "-=1"
+  )
+  .from(".right-ctr", { duration: 1, x: 500, skewX: 50 }, "-=1");
+
+    </script>
+    <body>
+     
+      
+        <div class="top">
+
+
+            <!--! ------------------------------- Header -------------------------------- -->
+<header>
+   
+  
+  
+    <!-- <div class="lang"> -->
+      <!-- <div class="lang-en">En</div>
+    </div> -->
+  </header>
+  <!--  -->
+  <!--! ---------------------------- Hero Section ----------------------------- -->
+  <!--# BG GIF -->
+  <div class="bg-gif"><video autoplay loop src="https://cdn.dribbble.com/users/2733/screenshots/15581498/media/55cb2ac35a15f1ffe8e2f1e9d979feed.mp4" alt="bg"></div>
+  
+  <!--# Hero ctr -->
+  <div class="ctr">
+    <!--! left-ctr -->
+    <div class="left-ctr">
+      <div class="left-ctr-1 p-3">
+        <span>
+          <h1 class="px-1">Gain,Improve</h1>
+        </span>
+        <span>
+          <h1> Knowldege</h1>
+        </span>
+        <span>
+          <h1>From Our</h1>
+        </span>
+        <span>
+          <h1>Site</h1>
+        </span>
+        <!-- <span>
+          <h1>Nft's</h1>
+        </span> -->
+      </div>
+      <div class="left-ctr-2">
+  
+        <div class="left-ctr-2-2">
+          <span>
+            <p></p>
+          </span>
+          <span>
+            <p></p>
+          </span>
+          <span>
+           <p>deg</p>
+            <p>gh</p>
+            <p>deg</p>
+            <p>gh</p><p>deg</p>
+            <p>gh</p>
+            <p>dnh</p>
+            <p>hd</p>
+            <p>h</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="right-ctr">
+      <div class="right-ctr-box">
+        <div class="right-ctr-box-inner-1">
+          <h1>Frontend Courses</h1>
+        
+        </div>
+        <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+             <span></span>
+          </div>
+      </div>
+    </div>
+  </div>
+        </div>
+
+
+
+
+            <nav class="main-menu">
+                    <ul>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-0">
+                                <i class="fa bi bi-house-door-fill fa-2x"></i><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                              Home
+                                </span>
+                            </a>
+                          
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-1">
+                                <i class="fa fa-2x bi bi-book"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                            Courses
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-2">
+                                <i class="fa fa-2x bi bi-airplane-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                                    Higher Studies
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-3">
+                                <i class=" fa fa-2x bi bi-briefcase-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                  <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                                    Placement
+                                </span>
+                            </a>
+                           
+                        </li>
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-4">
+                                <i class="fa fa-2x bi bi-person-badge"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                                  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                                </svg>
+                                <span class="nav-text pt-3 px-3">
+                                   Faculty
+                                </span>
+                            </a>
+                        </li> 
+                        <li class="has-subnav mb-5 px-1">
+                            <a href="https://g-arkh.web.app/#section-5">
+                                <i class="fa fa-2x bi bi-calendar2-event-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-calendar2-event-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                  </svg>
+                                <span class="nav-text pt-3 px-3">
+                               Events
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                           <a href="#">
+                               <i class="fa fa-2x"></i>
+                                <span class="nav-text">
+                                    Tools & Resources
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class="nav-text">
+                                    Member Map
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <i class="fa fa-info fa-2x"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <ul class="logout">
+                        <li>
+                           <a href="#">
+                                 <i class="fa fa-power-off fa-2x"></i>
+                                <span class="nav-text">
+                                    Logout
+                                </span>
+                            </a>
+                        </li>  
+                    </ul> -->
+                </nav>
+         
+                <div class="row">
+<div class="col-12 row">
+    <div class="col-md-1"></div>
+      <h1 class="mx-5 mt-3">Recommended Courses</h1>
+  <div class="row col-12 m-2">
+    <div class="col-md-3 col-12">
+      <!-- Tab navs -->
+      <div
+        class="nav flex-column nav-pills text-center"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <a
+          class="nav-link active  pil"
+          id="v-pills-home-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-home"
+          role="tab"
+          aria-controls="v-pills-home"
+          aria-selected="true"
+          >HTML & CSS</a
+        >
+        <a
+          class="nav-link pil"
+          id="v-pills-profile-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-profile"
+          role="tab"
+          aria-controls="v-pills-profile"
+          aria-selected="false"
+          >Validation & Frameworks</a>
+
+          
+        <!-- <a
+          class="nav-link pil"
+          id="v-pills-messages-tab"
+          data-mdb-toggle="pill"
+          href="#v-pills-messages"
+          role="tab"
+          aria-controls="v-pills-messages"
+          aria-selected="false"
+          >React</a
+        > -->
+
+
+      </div>
+      <!-- Tab navs -->
+    </div>
+  
+    <div class="col-md-9 col-12 mt-5">
+      <!-- Tab content -->
+      <div class="tab-content" id="v-pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-home"
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab"
+        >
+        <div class="container">
+           
+            <ul class="cards">
+      
+
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="https://www.henleyherald.com/wp-content/uploads/2019/08/66734754_10156176643630988_883564894085971968_o.jpg">
+                 
+                    <h3 class="card-title pt-3">FreeCodeCamp<br>HTML & CSS  
+                        
+                     </h3>
+                  <div class="card-content">
+                    <p>FreeCodeCamp offers curriculum for web development..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.freecodecamp.org/learn/responsive-web-design/">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                </div>
+              </li>
+
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="https://cdn.dribbble.com/users/212238/screenshots/4577115/media/271e287a5b88099ee015d5739fe384e9.png?compress=1&resize=400x300&vertical=center">
+                 
+                    <h3 class="card-title pt-3">The Net Ninja <br>HTML & CSS                   
+                     </h3>
+                  <div class="card-content">
+                    <p>The Net Ninja is a popular YouTube channel that teaches the  ...</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.youtube.com/watch?v=hu-q2zYwEYs&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G">
+                    <div class="btn btn-danger col-8"> Watch More</div></a>
+                </div>
+              </li>
+
+              <li class="card">
+                <div>
+            
+                  <img class="inside-img col-12" src="https://wallpaperaccess.com/full/1631871.jpg">
+                 
+                       <h3 class="card-title pt-3">W3-Schools<br> HTML 
+                        </h3>
+                  <div class="card-content">
+                    <p>In this mini bootcamp, you will learn the foundational skills ..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.w3schools.com/html/">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                 
+                </div>
+              </li>
+
+          
+              <li class="card">
+                <div>
+                  <img class="inside-img col-12" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6">
+
+                  <h3 class="card-title pt-3">
+                    Developedbyed <br>HTML & CSS  </h3>
+                  <div class="card-content">
+                    <p>Whether you're a beginner or an experienced developer</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a href="https://www.youtube.com/watch?v=vQWlgd7hV4A&list=PLDyQo7g0_nsU2O7gEdh7cAgamyh0xZumZ&index=1"> 
+                    <div class="btn btn-danger col-8"> Watch More</div>
+                  </a>
+                </div>
+              </li>
+
+
+              <li class="card">
+                <div>
+            
+                  <img class="inside-img col-12" src="https://wallpaperaccess.com/full/1631871.jpg">
+                 
+                       <h3 class="card-title pt-3">W3-Schools <br> CSS
+                        </h3>
+                  <div class="card-content">
+                    <p>In this mini bootcamp, you will learn the foundational skills ..</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.w3schools.com/css/default.asp">
+                    <div class="btn btn-danger col-8"> Learn More</div></a>
+                 
+                </div>
+              </li>
+              <li class="card">
+                <div>
+                    <img class="inside-img col-12" src="https://i.ytimg.com/vi/izqV9kZPOMY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCaTdjL6J6VMtdawUd9ZK8C7gfg-A">
+                 
+                    <h3 class="card-title pt-3">Coding Shuttle <br>CSS                  
+                     </h3>
+                  <div class="card-content">
+                    <p>Coding Shuttle is an Initiative to provide quality Programming   ...</p>
+                  </div>
+                </div>
+                <div class="card-link-wrapper">
+                  <a  href="https://www.youtube.com/watch?v=PVBqZRAOZL8&list=PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4">
+                    <div class="btn btn-danger col-8"> Watch More</div></a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+       
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-profile"
+          role="tabpanel"
+          aria-labelledby="v-pills-profile-tab"
+        >
+        <div class="container">
+           
+          <ul class="cards">
+            <li class="card">
+              <div>
+          
+                <img class="inside-img col-12" src="data:image/png;base64,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">
+               
+                     <h3 class="card-title pt-3">W3-Schools<br>Javascript
+                      </h3>
+                <div class="card-content">
+                  <p>In this mini bootcamp, you will learn the foundational skills ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://w3schools.com/js/default.asp">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://res.cloudinary.com/practicaldev/image/fetch/s--eCD6xkTl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/smfxhse1l9n8948dt2cp.jpg">
+               
+                  <h3 class="card-title pt-3">Classsed <br>Validation                  
+                   </h3>
+                <div class="card-content">
+                  <p>Classsed is a channel where you can learn about the latest and the best  ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=wvcORaD1MoI">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://images.opencollective.com/bootstrap/a892851/background.png">
+               
+                  <h3 class="card-title pt-3">Bootstrap<br>Framework
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>Bootstrap is a powerful, feature-packed frontend toolkit...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://cdn.dribbble.com/users/212238/screenshots/4577115/media/271e287a5b88099ee015d5739fe384e9.png?compress=1&resize=400x300&vertical=center">
+
+                <h3 class="card-title pt-3">
+                  The Net Ninja  <br>Bootstrap </h3>
+                <div class="card-content">
+                  <p>The Net Ninja is a popular YouTube channel that teaches the  ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://miro.medium.com/v2/resize:fit:644/1*d7Xs5RnaqcQtKzbNrAOAYA.png">
+          
+               
+                     <h3 class="card-title pt-3">Tailwindcss <br> Framework
+                      </h3>
+                <div class="card-content">
+                  <p>Rapidly build modern websites without ever leaving your HTML. ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://tailwindcss.com/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230310132857/TailwindCSS.jpg">
+
+               
+                  <h3 class="card-title pt-3">Tailwindcss <br>Framework             
+                   </h3>
+                <div class="card-content">
+                  <p>We're a small team of developers and designers spread out all across  ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/c/tailwindlabs">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+
+          </ul>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-messages"
+          role="tabpanel"
+          aria-labelledby="v-pills-messages-tab"
+        >
+        <!-- <div class="container">
+           
+          <ul class="cards">
+
+                <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://www.henleyherald.com/wp-content/uploads/2019/08/66734754_10156176643630988_883564894085971968_o.jpg">
+               
+                  <h3 class="card-title pt-3">FreeCodeCamp<br>HTML & CSS  
+                      
+                   </h3>
+                <div class="card-content">
+                  <p>FreeCodeCamp offers curriculum for web development..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.freecodecamp.org/learn/responsive-web-design/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+          
+                <img class="inside-img col-12" src="https://wallpaperaccess.com/full/1631871.jpg">
+               
+                     <h3 class="card-title pt-3">W3-Schools<br> HTML 
+                      </h3>
+                <div class="card-content">
+                  <p>In this mini bootcamp, you will learn the foundational skills ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.w3schools.com/html/">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://cdn.dribbble.com/users/212238/screenshots/4577115/media/271e287a5b88099ee015d5739fe384e9.png?compress=1&resize=400x300&vertical=center">
+               
+                  <h3 class="card-title pt-3">The Net Ninja <br>HTML & CSS                   
+                   </h3>
+                <div class="card-content">
+                  <p>The Net Ninja is a popular YouTube channel that teaches the  ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=hu-q2zYwEYs&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+        
+
+
+
+
+            <li class="card">
+              <div>
+                <img class="inside-img col-12" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6">
+
+                <h3 class="card-title pt-3">
+                  Developedbyed <br>HTML & CSS  </h3>
+                <div class="card-content">
+                  <p>Whether you're a beginner or an experienced developer</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a href="https://www.youtube.com/watch?v=vQWlgd7hV4A&list=PLDyQo7g0_nsU2O7gEdh7cAgamyh0xZumZ&index=1"> 
+                  <div class="btn btn-danger col-8"> Watch More</div>
+                </a>
+              </div>
+            </li>
+
+
+            <li class="card">
+              <div>
+          
+                <img class="inside-img col-12" src="https://wallpaperaccess.com/full/1631871.jpg">
+               
+                     <h3 class="card-title pt-3">W3-Schools <br> CSS
+                      </h3>
+                <div class="card-content">
+                  <p>In this mini bootcamp, you will learn the foundational skills ..</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.w3schools.com/css/default.asp">
+                  <div class="btn btn-danger col-8"> Learn More</div></a>
+               
+              </div>
+            </li>
+            <li class="card">
+              <div>
+                  <img class="inside-img col-12" src="https://i.ytimg.com/vi/izqV9kZPOMY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCaTdjL6J6VMtdawUd9ZK8C7gfg-A">
+               
+                  <h3 class="card-title pt-3">Coding Shuttle <br>CSS                  
+                   </h3>
+                <div class="card-content">
+                  <p>Coding Shuttle is an Initiative to provide quality Programming   ...</p>
+                </div>
+              </div>
+              <div class="card-link-wrapper">
+                <a  href="https://www.youtube.com/watch?v=PVBqZRAOZL8&list=PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4">
+                  <div class="btn btn-danger col-8"> Watch More</div></a>
+              </div>
+            </li>
+
+          </ul>
+        </div> -->
+
+
+        </div>
+      </div>
+      <!-- Tab content -->
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+  </html>

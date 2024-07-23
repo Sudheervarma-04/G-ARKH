@@ -1,0 +1,602 @@
+let button1 = document.querySelector(".buttons1");
+let button2 = document.querySelector(".buttons2");
+let close_but = document.querySelector(".close");
+let close_but1 = document.querySelector(".close1")
+let demo1 = document.getElementById('demo1');
+let demo2 = document.getElementById('demo2');
+let b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24;
+b1=document.getElementById("b1");
+b2=document.getElementById("b2");
+b3=document.getElementById("b3");
+b4=document.getElementById("b4");
+b5=document.getElementById("b5");
+b6=document.getElementById("b6");
+b7=document.getElementById("b7");
+b8=document.getElementById("b8");
+b9=document.getElementById("b9");
+b10=document.getElementById("b10");
+b11=document.getElementById("b11");
+b12=document.getElementById("b12");
+b13=document.getElementById("b13");
+b14=document.getElementById("b14");
+b15=document.getElementById("b15");
+b16=document.getElementById("b16");
+b17=document.getElementById("b17");
+b18=document.getElementById("b18");
+b19=document.getElementById("b19");
+b20=document.getElementById("b20");
+b21=document.getElementById("b21");
+b22=document.getElementById("b22");
+b23=document.getElementById("b23");
+b24=document.getElementById("b24");
+button1.addEventListener("click", ()=>{
+    document.getElementById("pb_head").style.display = "none";
+    document.querySelector(".buttons2").style.display = "none";
+    close_but.style.display = "block";
+    document.querySelector(".pb").style.backgroundColor="#121212";
+});
+button2.addEventListener("click", ()=>{
+    document.getElementById("sb_head").style.display = "none";
+    document.querySelector(".buttons1").style.display = "none";
+    close_but1.style.display = "block";
+    document.querySelector(".sb").style.backgroundColor="#121212";
+});
+close_but.addEventListener("click",()=>{
+    document.getElementById("pb_head").style.display = "block";
+    demo1.style.display="none";
+    demo2.style.display="none";
+    document.querySelector(".buttons2").style.display = "grid";
+    document.querySelector(".pb").style.backgroundColor="#121212";
+    close_but.style.display = "none";
+});
+close_but1.addEventListener("click",()=>{
+    document.getElementById("sb_head").style.display = "block";
+    demo1.style.display="none";
+    demo2.style.display="none";
+    document.querySelector(".buttons1").style.display = "grid";
+    document.querySelector(".sb").style.backgroundColor="#121212";
+    close_but1.style.display = "none";
+});
+//service based companies
+b1.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>TCS  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b2.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>INFOSYS  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b3.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>WIPRO  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b4.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>TECH MAHINDRA  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b5.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>COGNIZANT CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b6.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>ACCENTURE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b7.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>PERSISTENT  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b8.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>HEXWARE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b9.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>HCL CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b10.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>DSC CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b11.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>CAPGEMINI CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b12.addEventListener("click",()=>{
+    demo2.style.display="block"
+    demo2.innerHTML=`
+    <h1>HCL CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+//product based companies
+b13.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`
+    <h1>AMAZON  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b14.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>GOOGLE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b15.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>MICROSOFT  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b16.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>ADOBE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b17.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>GOLDMAN SACHS  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b18.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>CISCO  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b19.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>ORACLE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b20.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>ZOHO  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b21.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>FACEBOOK  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b22.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>ADP  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b23.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>DELOITE  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});
+b24.addEventListener("click",()=>{
+    demo1.style.display="block"
+    demo1.innerHTML=`<h1>AMD  CODING  <br> PATTERN</h1>
+    <table>
+    <tr>
+        <th>SECTION</th>
+        <th>QUESTIONS</th>
+        <th>TIME</th>
+    </tr>
+    <tr>
+    <th>CODING</th>
+    <th>2</th>
+    <th>30MINS</th>
+    </tr>
+    <tr>
+    <th>ENGLISH</th>
+    <th>15</th>
+    <th>10MINS</th>
+    </tr>
+    <tr>
+     </table>`;
+});

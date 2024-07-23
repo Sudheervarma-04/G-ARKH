@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="./css/boothomepage.css" /> -->
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+
+    </head>
+    <body>
+  
+        <nav class="navbar"> 
+            <div class="tabs">
+              <input  id="tab-1" type="radio" name="group" value="0" onclick="location.href='#section-0'" />
+              <input id="tab-2" type="radio" name="group" value="1" onclick="location.href='#section-1'" />  
+              <input id="tab-3" type="radio" name="group" value="2" onclick="location.href='#section-2'"/>
+              <input id="tab-4" type="radio" name="group" value="3" onclick="location.href='#section-3'"/>
+              <input id="tab-5" type="radio" name="group" value="4" onclick="location.href='#section-4'"/>
+              <input id="tab-6" type="radio" name="group" value="5" onclick="location.href='#section-5'"/>
+              <!-- <input id="tab-7" type="radio" name="group" value="6" onclick="location.href='#section-6'"/> -->
+              <!-- <input id="tab-8" type="radio" name="group" value="7" onclick="location.href='#section-7'"/> -->
+              <div class="buttons" > 
+                <label class="material-symbols-outlined " for="tab-1"><i class="bi bi-house-door-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                </svg></label>
+                
+               <label class="material-symbols-outlined " for="tab-2"> 
+                <i class="bi bi-book"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                </svg>
+                </label>
+                <label class="material-symbols-outlined " for="tab-3">
+                  <i class="bi bi-airplane-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+                  </svg>
+                  
+                </label>
+                <label class="material-symbols-outlined" for="tab-4">
+
+                  <i class="bi bi-briefcase-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                  </svg>
+                 
+                </label>
+                <label class="material-symbols-outlined " for="tab-5">
+
+                  <i class="bi bi-person-badge"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                  </svg>
+                 
+                </label>
+                <label class="material-symbols-outlined " for="tab-6">
+                  <i class="bi bi-calendar2-event-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-event-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                  </svg>
+                </label>
+                <!-- <label class="material-symbols-outlined " for="tab-7">
+                  <i class="fa-solid fa-fork-knife"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fill" viewBox="0 0 16 16">
+                    <path d="M14 10a6 6 0 0 1-12 0C2 5.686 5 0 8 0s6 5.686 6 10z"/>
+                  </svg>
+                  
+                </label> -->
+                <!-- <label class="material-symbols-outlined " for="tab-8">
+                  <i class="bi bi-person-fill"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                  </svg>
+                </label> -->
+              </div>
+            </input>
+          </nav>
+
+          <div class="col-12" id="section-0">
+          <div class="col-12 background ">
+          <div class="midtext">
+              <h1 class="tracking-in-expand">G - A  R  K  H</h1><br>
+          </div>
+          
+          </div>
+</div>
+     <div class="col-12" id="section-1">
+        <div class="row">
+            <div class="col-1">
+                <div class="bar1 d-flex flex-row justify-content-center">
+                    <h1 class="courses">COURSES</h1>
+                </div>
+            </div>
+            <div class="col-10 bodyofcards ml-5">
+<style>
+  
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition-delay: .1s;
+}
+.tag.visible:nth-child(1)
+{
+  transition-delay: .3s;
+}
+.tag.visible:nth-child(2)
+{
+  transition-delay: .5s;
+}
+.tag.visible:nth-child(3)
+{
+  transition-delay: .7s;
+}
+
+</style>
+<script>
+  $(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length*100; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
+
+</script>
+              <div class="row">
+                <div class="card col-12 col-md-4 tag">
+                  <div class="face face1 uppercardsh d-flex justify-content-center" >
+  
+                    <h3>General Skills</h3>
+                    
+                  </div>
+                  <div class="face face2 uppercardsp">
+                    <div class="content">
+         <p class="c">Here are some of the important general courses to learn<br>
+          1.Excel<br>
+            2.PPT<br>
+            3.PowerBI
+         </p>
+
+                      <a class="mt-3" href="./html/general.html" type="button">Read More</a>
+                    </div>
+                  </div>
+               </div>
+      
+               <div class="card col-12 col-md-4 tag">
+                <div class="face face1 courseraface1 uppercardsh d-flex justify-content-center" >
+                  <h3>Frontend</h3>
+                </div>
+                <div class="face face2 courseraface1 uppercardsp">
+                  <div class="content">
+                    <p class="c">Here are some of the important Frontend courses to learn<br>
+                      1.HTML & CSS<br>
+                      2.Validation & Frameworks<br>
+                      3.React
+                     </p>
+                    <a class="mt-3" href="./html/frontend.html" type="button">Read More</a>
+                  </div>
+                </div>
+             </div>
+           
+            
+      
+           <div class="card col-12 col-md-4 tag">
+            <div class="face face1 uppercardsh d-flex justify-content-center" >
+              <h3>Backend</h3>
+            </div>
+            <div class="face face2 uppercardsp">
+              <div class="content">
+                <p class="c">Here are some of the important Backend courses to learn<br>
+                  1.SQL<br>
+                    2.DJango<br>
+                    3.MongoDb
+                 </p>
+                <a class="mt-3" href="./html/backend.html" type="bu tton">Read More</a>
+              </div>
+            </div>
+         </div>
+              </div>
+
+        <div class="row ">
+          <div class="card col-12 col-md-4 tag">
+            <div class="face face1 uppercardsh d-flex justify-content-center" >
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="face face2 uppercardsp">
+              <div class="content">
+                <p class="c">Here are some of the imp Programming  courses to learn<br>
+                  1.C<br>
+                    2.Python<br>
+                    3.Java
+                 </p>
+                <a class="mt-3" href="./html/programming-language.html" type="button">Read More</a>
+              </div>
+            </div>
+         </div>
+
+         <div class="card col-12 col-md-4">
+          <div class="face face1  uppercardsh d-flex justify-content-center" >
+            <h3>Specialisations</h3>
+          </div>
+          <div class="face face2  uppercardsp">
+            <div class="content">
+              <p class="c">Here are some of the imp Specialisations courses to learn<br>
+                1.DATA SCIENCE<br>
+                  2.AI - ML<br>
+                  3.Cyber Security
+               </p>
+              <a class="mt-3" href="./html/specilisation.html" type="button">Read More</a>
+            </div>
+          </div>
+       </div>
+     
+      
+
+     <div class="card col-12 col-md-4">
+      <div class="face face1 uppercardsh d-flex justify-content-center" >
+        <h3>Others</h3>
+      </div>
+      <div class="face face2 uppercardsp">
+        <div class="content">
+          <p class="c">Here are some of the important general courses to learn<br>
+            1.Microsoft<br>
+              2.Firebase<br>
+              3.Cyber Security
+           </p>
+          <a class="mt-3" href="./html/others.html" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+
+   
+        </div>
+            </div>
+        </div>
+
+
+     </div>
+
+     
+     <div class="col-12" id="section-2">
+      <div class="row">
+          <div class="col-1">
+              <div class="bar1 d-flex flex-row justify-content-center">
+                  <h1 class="Higherstudies">HIGHER STUDIES</h1>
+              </div>
+          </div>
+          <div class="col-10 bodyofcards ml-5">
+      <div class="row ">
+
+        <div class="card col-12 col-md-4">
+          <div class="face face1 CATface1 uppercardsh d-flex justify-content-center" >
+            <h3>CAT (for IIMs)</h3>
+          </div>
+          <div class="face face2 CATface1 uppercardsp">
+            <div class="content">
+              <p><span class="c">PAID:80%<br>FREE:20%<br></span>Udemy is an online learning and teaching marketplace with over 185000 courses and 49 million students.</p>
+              <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+            </div>
+          </div>
+       </div>
+
+    
+
+       <div class="card col-12 col-md-4">
+        <div class="face face1 Matface1 uppercardsh d-flex justify-content-center" >
+          <h3>MAT (AIMA)</h3>
+        </div>
+        <div class="face face2 Matface1 uppercardsp">
+          <div class="content">
+            <p><span class="c">PAID:80%<br>FREE:20%<br></span>Udemy is an online learning and teaching marketplace with over 185000 courses and 49 million students.</p>
+            <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+          </div>
+        </div>
+     </div>
+
+     <div class="card col-12 col-md-4">
+      <div class="face face1  GREface1 uppercardsh d-flex justify-content-center" >
+        <h3>GRE</h3>
+      </div>
+      <div class="face face2 GREface1 uppercardsp">
+        <div class="content">
+          <p><span class="c">PAID:80%<br>FREE:20%<br></span>Udemy is an online learning and teaching marketplace with over 185000 courses and 49 million students.</p>
+          <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+        </div>
+      </div>
+   </div>
+
+     
+      </div>
+      <div class="row ">
+
+        <div class="card col-12 col-md-4">
+          <div class="face face1 CATface1 uppercardsh d-flex justify-content-center" >
+            <h3>IELTS</h3>
+          </div>
+          <div class="face face2 CATface1 uppercardsp">
+            <div class="content">
+              <p><span class="c">PAID:80%<br>FREE:20%<br></span>Udemy is an online learning and teaching marketplace with over 185000 courses and 49 million students.</p>
+              <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+            </div>
+          </div>
+       </div>
+
+       <div class="card col-12 col-md-4">
+        <div class="face face1 Matface1 uppercardsh d-flex justify-content-center" >
+          <h3>TOEFL</h3>
+        </div>
+        <div class="face face2 Matface1 uppercardsp">
+          <div class="content">
+            <p><span class="c">PAID:80%<br>FREE:20%<br></span>Udemy is an online learning and teaching marketplace with over 185000 courses and 49 million students.</p>
+            <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+          </div>
+        </div>
+     </div>
+   
+    
+
+   <div class="card col-12 col-md-4">
+    <div class="face face1 GREface1 uppercardsh d-flex justify-content-center" >
+      <h3>GATE</h3>
+    </div>
+    <div class="face face2 GREface1 uppercardsp">
+      <div class="content">
+        <p class="c">THIS CONTAINS ALL THE ACADEMIC COURSES AVAILABLE TO ALL BRANCHES OF  GITAM</p>
+        <br>
+       
+        <p>* ONLY FOR GITAM STUDENTS [<span class="login-required-color"> LOGIN REQUIRED </span>]</p>
+      
+        <a class="mt-4" href="./06-comming-soon/06-comming-soon.html" type="button">Read More</a>
+      </div>
+    </div>
+ </div>
+      </div>
+          </div>
+      </div>
+
+
+   </div>
+
+   <div class="col-12" id="section-3">
+    <div class="row">
+        <div class="col-1">
+            <div class="bar1 d-flex flex-row justify-content-center">
+                <h1 class="Higherstudies">PLACEMENT PREP</h1>
+            </div>
+        </div>
+        <div class="col-10 bodyofcards ml-5 mt-5">
+          <div class="row  mt-2  d-flex flex-row justify-content-center">     
+            <div class="card pc1 col-10 col-md-3 m-4">
+              <a href="./html/aptitude.html">  
+         <h1 class="aptitude"><span style="color: rgb(255, 255, 255);">APTITUDE</span></h1>
+                  </a>
+           </div>
+           <div class="card pc1 pc2 col-10 col-md-3  m-4">
+            <a href="./html/coding.html">  
+                <h1 class="coding"><span style="color: rgb(255, 255, 255);">CODING</span></h1>
+              </a>
+           </div>
+           <div class="card pc1 pc3 col-10 col-md-3 m-4">
+            <a href="./06-comming-soon/06-comming-soon.html">  
+                <h1 class="interview"><span style="color: rgb(255, 255, 255);">INTERVIEW</span></h1>
+              </a>
+           </div>
+      </div>
+
+
+        </div>
+    </div>
+
+
+ </div>
+
+ <div class="col-12" id="section-4">
+  <div class="row">
+      <div class="col-1">
+          <div class="bar1 d-flex flex-row justify-content-center">
+              <h1 class="FACULTY">FACULTY </h1>
+          </div>
+      </div>
+      <div class="col-10 bodyofcards ml-5 mt-5">
+        <div class="row  mt-2  d-flex flex-row justify-content-center">     
+          <div class="card fc1 col-10 col-md-3 m-4">
+          <a href="https://www.gitam.edu/about/gitam-all-faculty?campus=hyderabad">
+
+            <h1 class="hyd">HYD</h1>
+                </a>
+         </div>
+        
+         <div class="card fc1 fc2 col-10 col-md-3  m-4">
+          <a href="./html/faculty100.html">
+          <h1 class="vizag">VIZAG</h1>
+        </a>
+         </div>
+         <div class="card fc1 fc3 col-10 col-md-3 m-4">
+          <a href="https://www.gitam.edu/about/gitam-all-faculty?campus=bengaluru">
+          
+          <h1 class="blr">BLR</h1>
+            </a>
+         </div>
+    </div>
+
+
+      </div>
+  </div>
+
+
+</div>
+
+<div class="col-12" id="section-5">
+  <div class="row">
+      <div class="col-1">
+          <div class="bar1 d-flex flex-row justify-content-center">
+              <h1 class="events">EVENTS/CLUBS</h1>
+          </div>
+      </div>
+      <div class="col-10 bodyofcards ml-5 mt-5">
+        <div class="row  mt-2  d-flex flex-row justify-content-center">     
+          <div class="card ec1 col-10 col-md-3 m-4">
+          <a href="./06-comming-soon/06-comming-soon.html">
+
+            <h1 class="hyd">HYD</h1>
+                </a>
+         </div>
+         <div class="card ec1 ec2 col-10 col-md-3  m-4">
+          <a href="./eventcon-master/eventcon-master/index.html">
+       
+              <h1 class="vizag">VIZAG</h1>
+            </a>
+         </div>
+         <div class="card ec1 ec3 col-10 col-md-3 m-4">
+          <a href="./06-comming-soon/06-comming-soon.html">
+          
+              <h1 class="blr">BLR</h1>
+            </a>
+         </div>
+    </div>
+
+
+      </div>
+  </div>
+
+
+</div>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-title="g-arkh"
+  agent-id="2d05b0e9-4063-4b05-a3e8-6fc3e2c46ef8"
+  language-code="en"
+></df-messenger>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC5NrhKsFerH3QOq8ysymmWBvGuJteaFb4",
+  authDomain: "g-arkh.firebaseapp.com",
+  projectId: "g-arkh",
+  storageBucket: "g-arkh.appspot.com",
+  messagingSenderId: "257678127815",
+  appId: "1:257678127815:web:770313382c8c5258bc84e2",
+  measurementId: "G-K1H7LXRW2Y"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+<script>
+  
+      
+
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY >= 0) 
+      {
+        $('input[name="group"][value="0"]').prop('checked', true);
+      } 
+      if (window.scrollY > 300) 
+      {
+        $('input[name="group"][value="1"]').prop('checked', true);
+      } 
+      if (window.scrollY > 900) 
+      {
+        $('input[name="group"][value="2"]').prop('checked', true);
+      }  
+      if (window.scrollY > 1600) 
+      {
+        $('input[name="group"][value="3"]').prop('checked', true);
+      } 
+      if (window.scrollY > 2000) 
+      {
+        $('input[name="group"][value="4"]').prop('checked', true);
+      } 
+      if (window.scrollY > 2800) 
+      {
+        $('input[name="group"][value="5"]').prop('checked', true);
+      }  
+      // if (window.scrollY > 3500) 
+      // {
+      //   $('input[name="group"][value="6"]').prop('checked', true);
+      // } 
+      // if (window.scrollY > 11700) 
+      // {
+      //   $('input[name="group"][value="7"]').prop('checked', true);
+      // }  
+      
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
